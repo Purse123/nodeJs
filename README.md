@@ -57,9 +57,10 @@ if true:
 query: {name='pierce', age='20'}
 <hr/>
 program:
-switch(myUrl.pathname) {
-    case '/search': 
-        const search = myUrl.query.search_query;
-        res.end(`result for your search: ${search}`);
-    break;
-}
+<br/>
+switch(myUrl.pathname) {<br/>
+    case '/search': <br/>
+        const search = myUrl.query.search_query;<br/>
+        res.end(`result for your search: ${search}`);<br/>
+    break;<br/>
+}<br/>
