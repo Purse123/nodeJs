@@ -38,3 +38,28 @@ myServer.listen(8000, () => {
 })
 <hr/>
 <hr/>
+<h2>Working with URL package</h2>
+<b>Setup: </b>
+npm i url
+const url = require('url');
+
+// URL package help seperate url into different package
+*/about?name=pierce&age=20
+
+const myUrl = url.parse(req.url, true);
+@param urlString —> The URL string to parse.
+@param parseQueryString -> If true it handle query parameter
+
+if false:
+query: name=pierce&age=20
+
+if true:
+query: {name='pierce', age='20'}
+<hr/>
+program:
+switch(myUrl.pathname) {
+    case '/search': 
+        const search = myUrl.query.search_query;
+        res.end(`result for your search: ${search}`);
+    break;
+}
