@@ -22,6 +22,15 @@ const myServer = http.createServer((req, res) => {
                 const search = myUrl.query.search_query;
                 res.end(`result for your search: ${search}`);
                 break;
+            case '/signup':
+                if(req.method === "GET") {
+                    res.end("this is a signup form");
+                }
+                else if(req.method === "POST") {
+                    // DB QUERIES
+                    res.end("Success")
+                }
+                break;
             default: res.end("404 page not found");
         }
     })
