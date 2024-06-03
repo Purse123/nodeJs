@@ -1,5 +1,4 @@
-**Express**
-<hr/>
+<h1>Express</h1>
 <hr/>
 <h2>To import modules:</h2>
 npm i express
@@ -11,8 +10,7 @@ const app = express();
 
 app.listen(8000, () => {console.log("http://localhost:8000/");})
 <hr/>
-<hr/>
-<h1>Working with url</h1>
+<h2>Working with url</h2>
 
 > syntax: app.METHOD(path, handlerFunction);
 
